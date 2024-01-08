@@ -399,9 +399,9 @@ img {
 }
 
 .fild-accept:checked+.accept-icon {
-    background-color: #404BBF;
     border-radius: 4px;
     border-color: #404BBF;
+    background-color: #404bbf;
 }
 
 .fild-accept:checked+.accept-icon>.icon {
@@ -418,6 +418,10 @@ img {
     stroke: rgba(46, 47, 66, 0.40);
     cursor: pointer;
     margin-right: 8px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon {
