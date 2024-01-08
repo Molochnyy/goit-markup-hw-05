@@ -644,31 +644,30 @@
               </svg>
             </div>
           </div>
-          <div class="modal-fild">
-            <label class="modal-fild-label" for="comment">Comment</label>
+          <div class="modal-fild-comment">
+            <label class="modal-fild-label" for="user-comment">Comment</label>
             <textarea
               placeholder="Text input"
               rows="7"
               class="input-comment"
-              id="comment"
-              name="comment"></textarea>
+              id="user-comment"
+              name="user-comment"></textarea>
           </div>
-          <div class="modal-fild">
-            <label class="modal-fild-label-accept" for="fild-accept">
-              <input
-                id="fild-accept"
-                value="false"
-                class="fild-accept visually-hidden"
-                name="fild-accept"
-                type="checkbox" />
-              <span class="accept-icon">
-                <svg class="icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-vector"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a class="acept-link" href="">Privacy Policy</a>
-            </label>
+          <div class="accept-div">
+            <input
+              class="fild-accept visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              value="true"
+              name="user-privacy" />
+            <label class="modal-fild-label-accept" for="user-privacy"></label>
+            <span class="accept-icon">
+              <svg class="icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="acept-link" href="">Privacy Policy</a>
           </div>
           <button class="hero-modalform-button" type="submit">Send</button>
         </form>
